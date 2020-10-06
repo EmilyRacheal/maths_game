@@ -1,0 +1,49 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #821752;
+	color: #edc988;
+}
+
+button{
+	padding: 15px;
+	border: none;
+	background-color: #de4463;
+	color: #ffff;
+	border-radius: 0px;
+	margin: 10px;
+	width: 10%;
+	font-size: 15px;
+}
+
+input{
+	padding: 15px;
+	border-radius: 0px;
+	border: none;
+	width: 30%;
+}
+
+.num{
+	animation-name: jump;
+	animation-direction: alternate;
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+
+.animation-space{
+	position: relative;
+	/* display: none; */
+	animation: mySpace 0.1s linear;
+}
+
+@keyframes jump{
+	from {padding: 20px;}
+	to {padding: 30px;
+		background-color: transparent;}
+}
+@keyframes mySpace{
+	from{ bottom: -100px; opacity: 0;}
+	to{ bottom: 0px; opacity: 1;}
+}
